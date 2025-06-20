@@ -32,15 +32,12 @@ export default function QuizPage() {
         }
       });
     }
-  },[answerLogs]);
+  },[answerLogs, MAX_QUIZ_LEN, navigation]);
 
   return (
     <>
-      <Display>
-        {`Q1. ${quizData[quizIndex].question}`}
-      </Display>
-      {
-        quizData[quizIndex].options.map((option, index) => {
+      {quizData[quizIndex] && <Display>{`Q1. ${quizData[quizIndex].question}`}</Display>}
+      {quizData[quizIndex] && quizData[quizIndex].options.map((option, index) => {
           return (
             <Button key={`option-${index}`} onClick={() => handleClick(index)}>
               {option}

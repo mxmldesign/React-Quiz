@@ -1,4 +1,4 @@
-const quizData = {
+const quizData = [
   {
     question: "Question 1",
     options: ["Select 1", "Select 2","Select 3","Select 4"],
@@ -20,6 +20,6 @@ const quizData = {
     options: ["Select 1", "Select 2","Select 3","Select 4"],
     answerIndex: 1,
   }
-};
+];
 
-export default quizData
+export default quizData;

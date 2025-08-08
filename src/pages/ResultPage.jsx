@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { ROUTES } from "../const";
+import Result from "../components/Result/Result";
 
 
 export default function ResultPage() {
